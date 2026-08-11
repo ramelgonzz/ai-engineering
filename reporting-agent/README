@@ -1,0 +1,13 @@
+
+Plans a research strategy, searches the web, reads sources, cross-checks facts, and produces a cited report.
+Demonstrates: planning, tool use, citation handling, self-critique loops.
+
+Architecture
+plan → search → read/extract → synthesize → self-critique → revise
+Stack: Python, an LLM API (function calling), a search tool (Tavily/Serper/web scraping), simple orchestration (LangGraph, or just hand-rolled loop — hand-rolled is actually more impressive since it proves you understand the mechanics, not just a framework)
+
+TODO:
+Citation tracking (claims linked to sources)
+A "confidence check" step where it flags uncertain claims
+Cost/token logging per run
+A basic web UI (Streamlit is fine) so people can actually try it live
