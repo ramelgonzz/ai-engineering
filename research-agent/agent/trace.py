@@ -1,10 +1,11 @@
 """
 Trace logging.
 
-This is the piece most tutorials skip and most interviewers ask about.
-Every step the agent takes gets recorded: what it decided, what it called,
-what it cost. Without this, "the agent is reasoning" is just a claim —
-with it, it's something you can show.
+Logs:
+What the agent decided
+What the agent called
+The duration
+The token cost
 """
 import json
 import time
