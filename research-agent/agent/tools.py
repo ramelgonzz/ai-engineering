@@ -39,10 +39,8 @@ def search_web(query: str) -> list[dict]:
 
 def fetch_and_extract(url: str, max_chars: int = 6000) -> str:
     """Fetches a page and strips it down to readable text.
-
-    Deliberately simple (no JS rendering, no paywall handling) — this is a
-    portfolio project, not a production scraper. Document that trade-off
-    rather than hide it.
+    Simple html parser;
+    for production scraping: needs JS rendering and paywall handling.
     """
     try:
         resp = requests.get(
