@@ -9,8 +9,7 @@ Architecture
 plan → search → read/extract → synthesize → self-critique → revise
 Stack: Python, an LLM API (function calling), a search tool (Tavily/Serper/web scraping), simple orchestration with LangGraph.
 
-TODO:
-
+The critic.py step makes this system agentic, by giving a confidence level and possible gaps.
 
 # Research agent
 
