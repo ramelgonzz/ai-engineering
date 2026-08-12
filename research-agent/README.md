@@ -7,7 +7,7 @@ Architecture
 ![Alt Text](research_agent_architecture.png)
 
 plan → search → read/extract → synthesize → self-critique → revise
-Stack: Python, an LLM API (function calling), a search tool (Tavily/Serper/web scraping), simple orchestration with LangGraph.
+Stack: Python, an LLM API (function calling), a search tool (Tavily/Serper/web scraping).
 
 The critic.py step makes this system agentic, by giving a confidence level and possible gaps.
 
