@@ -1,6 +1,8 @@
 """
 Central config. Loads from a .env file (see .env.example) or real env vars.
 Keeping this in one place makes it obvious what the agent depends on.
+MAX_PLAN_ITERATIONS set so the orchestrator can note if budget runs out
+instead of presenting incomplete work.
 """
 import os
 from dotenv import load_dotenv
