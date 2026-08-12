@@ -2,9 +2,8 @@
 Orchestrator: wires planner -> search -> extract -> synthesizer -> critic
 into a loop, with a hard cap so a confused agent can't run forever.
 
-This file has no LLM calls of its own — it's pure control flow. Keeping
-it that way means you can reason about the loop's correctness without
-worrying about prompt behavior.
+The CLI with the query calls the orchestrator which ties everything together
+with a MAX_PLAN_ITERATIONS for the for loop, defined in config.py.
 """
 from agent import planner, synthesizer, critic, tools
 from agent.trace import Trace
