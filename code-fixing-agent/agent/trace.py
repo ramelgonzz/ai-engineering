@@ -1,7 +1,10 @@
 """
-Trace logging — same pattern as the research agent's trace.py. Every
-attempt gets recorded so a "the agent converged in 3 attempts" claim is
-backed by a file, not just an anecdote.
+Trace logging:
+Every attempt is recorded:
+Number of attempts
+Passed count
+Run ID
+Token cost
 """
 import json
 import time
